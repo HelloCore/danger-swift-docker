@@ -29,4 +29,5 @@ ARG SWIFT_FORMAT_VERSION=0.44.4
 RUN curl -L https://github.com/nicklockwood/SwiftFormat/tarball/$SWIFT_FORMAT_VERSION | tar zx
     && mv */CommandLineTool/swiftformat /usr/local/bin
 
+
 # ENTRYPOINT ["npx", "--package", "danger", "danger-swift", "ci"]
